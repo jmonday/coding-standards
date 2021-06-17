@@ -1,0 +1,13 @@
+{
+    "name": "jmonday/coding-standards",
+    "description": "Personal coding standard configuration.",
+    "type": "phpcodesniffer-standard",
+    "require": {
+        "php": "^8.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "slevomat/coding-standard": "^7.0",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable"
+}

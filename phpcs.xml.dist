@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset
+    name="PHPCS Coding Standards for jmonday/coding-standards"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd"
+>
+    <description>Personal coding standards configuration.</description>
+
+    <arg name="basepath" value="."/>
+    <arg name="colors" />
+    <arg name="extensions" value="php"/>
+    <arg name="tab-width" value="4" />
+    <arg value="ps"/>
+
+    <rule ref="Jmonday"/>
+
+    <file>lib</file>
+</ruleset>
+
