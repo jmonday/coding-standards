@@ -20,6 +20,7 @@
         <exclude name="SlevomatCodingStandard.Functions.DisallowNamedArguments" />
         <!-- Contradicts SlevomatCodingStandard.Functions.RequireTrailingCommaInCall.MissingTrailingComma with PHP attributes. -->
         <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInCall.DisallowedTrailingComma" />
+        <exclude name="SlevomatCodingStandard.Functions.DisallowArrowFunction" />
 
         <!-- Namespaces -->
         <!-- Contradicts SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName -->
@@ -52,6 +53,16 @@
 
     <!-- Control Structures -->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison" />
+
+    <!-- Function -->
+    <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction">
+        <properties>
+            <property name="allowMultiLine" value="false" />
+            <property name="spacesCountAfterArrow" value="1" />
+            <property name="spacesCountAfterKeyword" value="1" />
+            <property name="spacesCountBeforeArrow" value="1" />
+        </properties>
+    </rule>
 
     <!-- Namespaces -->
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
