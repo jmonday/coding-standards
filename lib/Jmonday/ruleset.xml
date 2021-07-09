@@ -8,6 +8,9 @@
     <rule ref="PSR12" />
 
     <rule ref="SlevomatCodingStandard">
+        <!-- Classes -->
+        <exclude name="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion.DisallowedConstructorPropertyPromotion" />
+
         <!-- Commenting -->
         <exclude name="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment" />
 
@@ -21,6 +24,8 @@
         <!-- Contradicts SlevomatCodingStandard.Functions.RequireTrailingCommaInCall.MissingTrailingComma with PHP attributes. -->
         <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInCall.DisallowedTrailingComma" />
         <exclude name="SlevomatCodingStandard.Functions.DisallowArrowFunction" />
+        <!-- Doesn't seem to work with unused parameters in methods overriding parent definitions within abstract classes. -->
+        <exclude name="SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter" />
 
         <!-- Namespaces -->
         <!-- Contradicts SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName -->
