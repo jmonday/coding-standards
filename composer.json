@@ -5,6 +5,11 @@
     "require": {
         "php": "^8.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^0.12.90",
+        "phpstan/phpstan-deprecation-rules": "^0.12.6",
+        "phpstan/phpstan-phpunit": "^0.12.20",
+        "phpstan/phpstan-strict-rules": "^0.12.9",
         "slevomat/coding-standard": "^7.0",
         "squizlabs/php_codesniffer": "^3.6"
     }
