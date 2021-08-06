@@ -10,11 +10,15 @@
     <rule ref="SlevomatCodingStandard">
         <!-- Classes -->
         <exclude name="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion.DisallowedConstructorPropertyPromotion" />
+        <!-- I like using the `Interface` suffix with interfaces ¯\_(ツ)_/¯ -->
+        <exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming.SuperfluousSuffix" />
 
         <!-- Commenting -->
         <exclude name="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment" />
 
         <!-- Control Structures -->
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowNullSafeObjectOperator.DisallowedNullSafeObjectOperator" />
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator.DisallowedShortTernaryOperator" />
         <exclude name="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison" />
         <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses" />
 
